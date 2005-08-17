@@ -1,4 +1,4 @@
-# $Rev: 3261 $, $Date: 2005-08-15 12:17:57 $
+# $Rev: 3261 $, $Date: 2005-08-17 20:16:28 $
 #
 Summary:	Render protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u Render i pomocnicze
@@ -30,6 +30,8 @@ Summary:	Render protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u Render i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
+Obsoletes:	render
+Obsoletes:	renderext
 
 %description devel
 Render protocol and ancillary headers.

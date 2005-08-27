@@ -1,5 +1,3 @@
-# $Rev: 3261 $, $Date: 2005-08-17 20:16:28 $
-#
 Summary:	Render protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u Render i pomocnicze
 Name:		xorg-proto-renderproto
@@ -12,9 +10,9 @@ Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/proto/renderproto-%{version}.ta
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkg-config
-BuildRoot:	%{tmpdir}/renderproto-%{version}-root-%(id -u -n)
+BuildRequires:	xorg-util-util-macros
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
@@ -23,7 +21,6 @@ Render protocol and ancillary headers.
 
 %description -l pl
 Nag³ówki protoko³u Render i pomocnicze.
-
 
 %package devel
 Summary:	Render protocol and ancillary headers
@@ -39,10 +36,8 @@ Render protocol and ancillary headers.
 %description devel -l pl
 Nag³ówki protoko³u Render i pomocnicze.
 
-
 %prep
 %setup -q -n renderproto-%{version}
-
 
 %build
 %{__aclocal}
@@ -52,7 +47,6 @@ Nag³ówki protoko³u Render i pomocnicze.
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -60,10 +54,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	pkgconfigdir=%{_pkgconfigdir}
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files devel
 %defattr(644,root,root,755)

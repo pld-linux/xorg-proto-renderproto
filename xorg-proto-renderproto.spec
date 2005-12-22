@@ -5,8 +5,8 @@ Version:	0.9.2
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/proto/renderproto-%{version}.tar.bz2
-# Source0-md5:	4ea888582394a0c9862b2219c605797f
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/renderproto-X11R7.0-%{version}.tar.bz2
+# Source0-md5:	a7f3be0960c92ecb6a06a1022fe957df
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -34,7 +34,7 @@ Render protocol and ancillary headers.
 Nag³ówki protoko³u Render i pomocnicze.
 
 %prep
-%setup -q -n renderproto-%{version}
+%setup -q -n renderproto-X11R7.0-%{version}
 
 %build
 %{__aclocal}

@@ -6,7 +6,7 @@ Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/renderproto-%{version}.tar.bz2
-# Source0-md5:	a7f3be0960c92ecb6a06a1022fe957df
+# Source0-md5:	28fbe8a59ebd31f098b90ec64f3d133a
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake

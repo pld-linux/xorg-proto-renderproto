@@ -5,7 +5,7 @@ Version:	0.9.2
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/renderproto-X11R7.0-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/proto/renderproto-%{version}.tar.bz2
 # Source0-md5:	a7f3be0960c92ecb6a06a1022fe957df
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57

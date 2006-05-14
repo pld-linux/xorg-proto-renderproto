@@ -34,7 +34,7 @@ Render protocol and ancillary headers.
 Nag³ówki protoko³u Render i pomocnicze.
 
 %prep
-%setup -q -n renderproto-X11R7.0-%{version}
+%setup -q -n renderproto-%{version}
 
 %build
 %{__aclocal}

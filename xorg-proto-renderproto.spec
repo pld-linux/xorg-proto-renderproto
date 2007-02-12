@@ -1,5 +1,5 @@
 Summary:	Render protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 Render i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u Render i pomocnicze
 Name:		xorg-proto-renderproto
 Version:	0.9.2
 Release:	1
@@ -16,12 +16,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Render protocol and ancillary headers.
 
-%description -l pl
-Nag丑wki protoko硊 Render i pomocnicze.
+%description -l pl.UTF-8
+Nag艂贸wki protoko艂u Render i pomocnicze.
 
 %package devel
 Summary:	Render protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 Render i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u Render i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	render
@@ -30,8 +30,8 @@ Obsoletes:	renderext
 %description devel
 Render protocol and ancillary headers.
 
-%description devel -l pl
-Nag丑wki protoko硊 Render i pomocnicze.
+%description devel -l pl.UTF-8
+Nag艂贸wki protoko艂u Render i pomocnicze.
 
 %prep
 %setup -q -n renderproto-%{version}

@@ -1,12 +1,12 @@
 Summary:	Render protocol and ancillary headers
 Summary(pl.UTF-8):	Nagłówki protokołu Render i pomocnicze
 Name:		xorg-proto-renderproto
-Version:	0.9.2
+Version:	0.9.3
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/renderproto-%{version}.tar.bz2
-# Source0-md5:	28fbe8a59ebd31f098b90ec64f3d133a
+# Source0-md5:	598bc9a493deee2e48e4434e94467189
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake

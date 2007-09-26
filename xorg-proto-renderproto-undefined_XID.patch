@@ -1,0 +1,11 @@
+--- renderproto-0.9.3/render.h~	2007-08-31 22:42:38.000000000 +0100
++++ renderproto-0.9.3/render.h	2007-09-26 22:09:55.704994797 +0100
+@@ -26,6 +26,8 @@
+ #ifndef _RENDER_H_
+ #define _RENDER_H_
+ 
++#include <X11/X.h>
++
+ typedef XID		Glyph;
+ typedef XID		GlyphSet;
+ typedef XID		Picture;

@@ -1,5 +1,5 @@
-Summary:	Render protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu Render i pomocnicze
+Summary:	Render extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia Render
 Name:		xorg-proto-renderproto
 Version:	0.11
 Release:	1
@@ -11,28 +11,28 @@ Patch0:		%{name}-undefined_XID.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Render protocol and ancillary headers.
+Render extension headers.
 
 %description -l pl.UTF-8
-Nagłówki protokołu Render i pomocnicze.
+Nagłówki rozszerzenia Render.
 
 %package devel
-Summary:	Render protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu Render i pomocnicze
+Summary:	Render extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia Render
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	render
 Obsoletes:	renderext
 
 %description devel
-Render protocol and ancillary headers.
+Render extension headers.
 
 %description devel -l pl.UTF-8
-Nagłówki protokołu Render i pomocnicze.
+Nagłówki rozszerzenia Render.
 
 %prep
 %setup -q -n renderproto-%{version}
@@ -58,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
-%{_includedir}/X11/extensions/*.h
+%doc COPYING ChangeLog renderproto.txt
+%{_includedir}/X11/extensions/render*.h
 %{_pkgconfigdir}/renderproto.pc

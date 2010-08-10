@@ -1,12 +1,12 @@
 Summary:	Render extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia Render
 Name:		xorg-proto-renderproto
-Version:	0.11
+Version:	0.11.1
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/renderproto-%{version}.tar.bz2
-# Source0-md5:	b160a9733fe91b666e74fca284333148
+# Source0-md5:	a914ccc1de66ddeb4b611c6b0686e274
 Patch0:		%{name}-undefined_XID.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57

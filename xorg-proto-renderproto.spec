@@ -1,5 +1,5 @@
-Summary:	Render extension headers
-Summary(pl.UTF-8):	Nagłówki rozszerzenia Render
+Summary:	RENDER extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia RENDER
 Name:		xorg-proto-renderproto
 Version:	0.11.1
 Release:	1
@@ -7,36 +7,34 @@ License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/renderproto-%{version}.tar.bz2
 # Source0-md5:	a914ccc1de66ddeb4b611c6b0686e274
-Patch0:		%{name}-undefined_XID.patch
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros >= 1.2
+BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Render extension headers.
+X Rendering (RENDER) extension headers.
 
 %description -l pl.UTF-8
-Nagłówki rozszerzenia Render.
+Nagłówki rozszerzenia RENDER.
 
 %package devel
-Summary:	Render extension headers
-Summary(pl.UTF-8):	Nagłówki rozszerzenia Render
+Summary:	RENDER extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia RENDER
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	render
 Obsoletes:	renderext
 
 %description devel
-Render extension headers.
+X Rendering (RENDER) extension headers.
 
 %description devel -l pl.UTF-8
-Nagłówki rozszerzenia Render.
+Nagłówki rozszerzenia RENDER.
 
 %prep
 %setup -q -n renderproto-%{version}
-%patch0 -p1
 
 %build
 %{__aclocal}
@@ -58,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog renderproto.txt
+%doc COPYING ChangeLog README renderproto.txt
 %{_includedir}/X11/extensions/render*.h
 %{_pkgconfigdir}/renderproto.pc

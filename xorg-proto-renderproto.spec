@@ -2,7 +2,7 @@ Summary:	RENDER extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia RENDER
 Name:		xorg-proto-renderproto
 Version:	0.11.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/renderproto-%{version}.tar.bz2

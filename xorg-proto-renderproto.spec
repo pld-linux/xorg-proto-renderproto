@@ -1,13 +1,14 @@
+# NOTE: now maintained in xorg-proto-xorgproto.spec
 Summary:	RENDER extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia RENDER
 Name:		xorg-proto-renderproto
 Version:	0.11.1
-Release:	2
+Release:	2.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/individual/proto/renderproto-%{version}.tar.bz2
+Source0:	https://xorg.freedesktop.org/releases/individual/proto/renderproto-%{version}.tar.bz2
 # Source0-md5:	a914ccc1de66ddeb4b611c6b0686e274
-URL:		http://xorg.freedesktop.org/
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros >= 1.3
